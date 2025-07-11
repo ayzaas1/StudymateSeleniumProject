@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Studymate Regression Suite">
+    <test name="Studymate Regression Test Cases">
+        <parameter name="groupImagePath" value="C://Users/ayzaa/Documents/stich.jpg"/>
+        <parameter name="groupName" value="Group99"/>
+        <parameter name="groupDate" value="29.05.2025"/>
+        <parameter name="groupDescription" value="Example of description"/>
+        <parameter name="expectedMessage" value="Group successfully saved"/>
+
+
+        <classes>
+
+            <class name="com.qa.studymate.tests.LoginTest"/>
+            <class name="com.qa.studymate.tests.GroupTest"/>
+            <class name="com.qa.studymate.tests.StudentsTest"/>
+            <class name="com.qa.studymate.tests.TeacherTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
