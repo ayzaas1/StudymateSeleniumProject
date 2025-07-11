@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Studymate Smoke Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Studymate Smoke Test Cases(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.studymate.tests.LoginTest">
+        <methods>
+          <include name="happyPathLogin"/>
+          <include name="chooseLanguage" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qa.studymate.tests.LoginTest -->
+    </classes>
+  </test> <!-- Studymate Smoke Test Cases(failed) -->
+</suite> <!-- Failed suite [Studymate Smoke Suite] -->

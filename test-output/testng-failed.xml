@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Studymate Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Studymate Regression Test Cases(failed)">
+    <parameter name="groupName" value="Group99"/>
+    <parameter name="groupDescription" value="Example of description"/>
+    <parameter name="groupDate" value="29.05.2025"/>
+    <parameter name="groupImagePath" value="C://Users/ayzaa/Documents/stich.jpg"/>
+    <parameter name="expectedMessage" value="Group successfully saved"/>
+    <classes>
+      <class name="com.qa.studymate.tests.LoginTest">
+        <methods>
+          <include name="successfullyLogin"/>
+          <include name="invalidLoginMessagesFunctionality"/>
+          <include name="chooseLanguageAndSuccessfullyLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.studymate.tests.LoginTest -->
+    </classes>
+  </test> <!-- Studymate Regression Test Cases(failed) -->
+</suite> <!-- Failed suite [Studymate Regression Suite] -->

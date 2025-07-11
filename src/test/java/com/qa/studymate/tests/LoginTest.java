@@ -38,7 +38,6 @@ public class LoginTest extends TestBase {
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(actualUrl, expectedUrl);
     }
-
     @Test(dataProvider = "invalidCredentialMessage", dataProviderClass = LoginTestData.class)
     public void invalidLoginErrorMessages(String language, String email, String password, String expectedErrorMessage) {
         LoginPage loginPage = new LoginPage(driver);

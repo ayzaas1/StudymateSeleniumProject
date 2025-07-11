@@ -20,10 +20,8 @@ public class GroupPage {
     @FindBy(xpath = "//button[.='Create group']")
     WebElement createGroupButton;
 
-
     @FindBy(xpath = "//input[@type='file']")
     WebElement groupImageInput;
-
 
     @FindBy(css = "input[name='name']")
     WebElement groupNameInput;
@@ -34,10 +32,8 @@ public class GroupPage {
     @FindBy(xpath = "//textarea[@name='description']")
     WebElement groupDescriptionInput;
 
-
     @FindBy(xpath = "//button[.='Create']")
     WebElement groupCreateButton;
-
 
     @FindBy(xpath = "//p[.='Group successfully saved']")
     WebElement groupCreatedMessage;

@@ -18,10 +18,8 @@ public class TestBase {
         driver.get(ConfigReader.readProperty("url"));
 
     }
-
     @AfterMethod
     public void tearDown() {
         Driver.closeDriver();
-
     }
 }
